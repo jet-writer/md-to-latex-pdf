@@ -21,7 +21,7 @@ sed -i '/\includegraphics/d' "$new_path"
 # Build the file.
 pdflatex "$new_path"
 
-rm $article_title.aux
-rm $article_title.log
-rm $article_title.out
-rm $article_title.tex
+rm "$article_title.aux"
+rm "$article_title.log"
+rm "$article_title.out"
+rm "$article_title.tex"
