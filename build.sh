@@ -19,7 +19,7 @@ sed -i "s/|TITLE|/$article_title/" "$new_path"
 sed -i '/\includegraphics/d' "$new_path"
 
 # Build the file.
-pdflatex "$new_path"
+xelatex "$new_path"
 
 rm "$article_title.aux"
 rm "$article_title.log"
